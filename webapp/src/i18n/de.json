@@ -1049,6 +1049,7 @@
   "projects_empty": "Keine Projekte",
   "projects_empty_action": "Projekt hinzufügen",
   "project_settings_base_language": "Basissprache",
+  "project_settings_use_namespaces": "Use namespaces TODO",
   "project_settings_base_namespace": "Standard-Namespace",
   "project_settings_button": "Einstellungen",
   "project_settings_danger_zone_title": "Gefahrenzone",

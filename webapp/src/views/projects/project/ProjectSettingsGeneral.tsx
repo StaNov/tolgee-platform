@@ -15,11 +15,13 @@ import { Box, styled } from '@mui/material';
 import { ProjectLanguagesProvider } from 'tg.hooks/ProjectLanguagesProvider';
 import { useProjectNamespaces } from 'tg.hooks/useProjectNamespaces';
 import { DefaultNamespaceSelect } from './components/DefaultNamespaceSelect';
+import { UseNamespacesCheckbox } from './components/UseNamespacesCheckbox';
 
 type FormValues = {
   name: string;
   description: string | undefined;
   baseLanguageId: number | undefined;
+  useNamespaces: boolean | false;
   defaultNamespaceId: number | '';
 };
 
@@ -49,6 +51,15 @@ const LanguageSelect = () => {
   );
 };
 
+const NamespacesCheckbox = () => {
+  return (
+    <UseNamespacesCheckbox
+      label={<T keyName="project_settings_use_namespaces" />}
+      name="useNamespaces"
+    />
+  );
+};
+
 const NamespaceSelect = () => {
   const { allNamespacesWithNone } = useProjectNamespaces();
   return (
@@ -69,6 +80,7 @@ export const ProjectSettingsGeneral = () => {
     name: project.name,
     baseLanguageId: project.baseLanguage?.id,
     description: project.description ?? '',
+    useNamespaces: project.useNamespaces ?? false,
     defaultNamespaceId: defaultNamespace?.id ?? '',
   } satisfies FormValues;
 
@@ -82,6 +94,7 @@ export const ProjectSettingsGeneral = () => {
     const data = {
       ...values,
       description: values.description || undefined,
+      useNamespaces: values.useNamespaces || false,
       defaultNamespaceId:
         values.defaultNamespaceId === 0 ? undefined : values.defaultNamespaceId,
     };
@@ -157,6 +170,7 @@ export const ProjectSettingsGeneral = () => {
           <ProjectLanguagesProvider>
             <LanguageSelect />
           </ProjectLanguagesProvider>
+          <NamespacesCheckbox />
           <NamespaceSelect />
         </Box>
       </StandardForm>

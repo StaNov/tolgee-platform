@@ -1146,6 +1146,7 @@
   "projects_empty": "No projects",
   "projects_empty_action": "Add project",
   "project_settings_base_language": "Base language",
+  "project_settings_use_namespaces": "Use namespaces",
   "project_settings_base_namespace": "Default namespace",
   "project_settings_button": "Settings",
   "project_settings_danger_zone_title": "Danger zone",

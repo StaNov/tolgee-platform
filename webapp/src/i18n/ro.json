@@ -1146,6 +1146,7 @@
   "projects_empty": "Niciun proiect",
   "projects_empty_action": "Adaugă proiect",
   "project_settings_base_language": "Limba de bază",
+  "project_settings_use_namespaces": "Use namespaces TODO",
   "project_settings_base_namespace": "Spațiul de nume implicit",
   "project_settings_button": "Setări",
   "project_settings_danger_zone_title": "Zona de pericol",

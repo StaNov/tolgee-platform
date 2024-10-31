@@ -126,7 +126,7 @@ export const FormBody: React.FC<Props> = ({ onCancel, autofocus }) => {
             {({ field, form }: FieldProps<any>) => {
               return (
                 <div>
-                  <FieldLabel>
+                  <FieldLabel> {/*TODO tady možná taky*/}
                     <LabelHint title={t('translation_single_namespace_hint')}>
                       <T keyName="translation_single_label_namespace" />
                     </LabelHint>

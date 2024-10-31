@@ -1146,6 +1146,7 @@
   "projects_empty": "Ingen projekter",
   "projects_empty_action": "Tilføj projekt",
   "project_settings_base_language": "Basis sprog",
+  "project_settings_use_namespaces": "Use namespaces TODO",
   "project_settings_base_namespace": "Standard navnerum",
   "project_settings_button": "Indstillinger",
   "project_settings_danger_zone_title": "Farezone",

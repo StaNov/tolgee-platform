@@ -1,0 +1,2 @@
+* Hide select boxes by the settings
+* Add liquibase changeset for customers already using namespaces, disable them only when there are none
